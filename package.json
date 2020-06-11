@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-classic-with-simple-adapter",
-  "version": "21.0.0",
+  "version": "22.0.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
