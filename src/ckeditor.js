@@ -35,6 +35,8 @@ import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
+import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
+import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -63,6 +65,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
+	TableProperties, 
+	TableCellProperties,
 	TextTransformation,
 	SimpleUploadAdapter,
 	TodoList,
@@ -118,7 +122,9 @@ ClassicEditor.defaultConfig = {
 		contentToolbar: [
 			'tableColumn',
 			'tableRow',
-			'mergeTableCells'
+			'mergeTableCells',
+			'tableProperties', 
+			'tableCellProperties'
 		]
 	},
 	mediaEmbed: {
