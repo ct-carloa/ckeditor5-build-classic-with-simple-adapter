@@ -34,6 +34,7 @@ import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleu
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Font from '@ckeditor/ckeditor5-font/src/font';
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -66,7 +67,8 @@ ClassicEditor.builtinPlugins = [
 	SimpleUploadAdapter,
 	TodoList,
 	Alignment,
-	Font
+	Font,
+	HorizontalLine
 ];
 
 // Editor configuration.
@@ -77,6 +79,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
 			'|',
+			'horizontalLine',
 			'bold',
 			'italic',
 			'link',
