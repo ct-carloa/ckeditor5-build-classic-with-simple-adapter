@@ -33,6 +33,7 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -64,7 +65,8 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	SimpleUploadAdapter,
 	TodoList,
-	Alignment
+	Alignment,
+	Font
 ];
 
 // Editor configuration.
@@ -72,6 +74,8 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
+			'|',
+			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
 			'|',
 			'bold',
 			'italic',
